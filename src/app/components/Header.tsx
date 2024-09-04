@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import MainButton from '../ui/mainButton'
 
 function Header() {
   return (
@@ -17,7 +18,7 @@ function Header() {
         </ul>
       </nav>
       </div>
-      <button className='bg-main text-white text-[16px] px-4 py-1 rounded-full'>Get in Touch</button>
+      <MainButton />
     </header>
   )
 }
