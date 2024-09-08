@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 function Compagnies() {
@@ -29,15 +30,15 @@ function Compagnies() {
 
 
   return (
-   <section className='flex justify-center items-center py-28'>
-    <article className='flex flex-col justify-center items-center'>
-    <p className='text-black text-[18px] font-semibold'>Trusted by top companies around the globe</p>
-    <ul className='flex justify-between items-center gap-4'>
+   <section className='flex justify-center items-center py-8 px-5 md:px-0 md:py-28'>
+    <article className='flex flex-col justify-center items-center gap-6'>
+    <p className='text-black text-[16px] font-semibold text-center'>Trusted by top companies around the globe</p>
+    <ul className='flex md:flex-nowrap flex-wrap justify-between items-center gap-2'>
         {compagnies.map((compagnie) => (
             <li key={compagnie.name}>
                 <a className='flex justify-center items-center'  href={compagnie.link}>
                     <p>{compagnie.name}</p>
-                    <img src={compagnie.logo} alt={compagnie.name} />
+                    <Image width={80} height={50} src={compagnie.logo} alt={compagnie.name} />
                 </a>
             </li>
         ))}

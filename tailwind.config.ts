@@ -9,8 +9,8 @@ const config: Config = {
   theme: {
       extend: {
         screens: {
-          'sm': '640px',
-          // => @media (min-width: 640px) { ... }
+          'sm': '375px',
+          // => @media (min-width: 375px) { ... }
     
           'md': '768px',
           // => @media (min-width: 768px) { ... }

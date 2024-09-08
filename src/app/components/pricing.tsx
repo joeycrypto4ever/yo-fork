@@ -5,11 +5,11 @@ function Pricing() {
   return (
     <section className='flex flex-col justify-center items-center px-8 py-28 gap-20'>
         <article className='flex flex-col justify-center items-center'>
-            <p className='text-[16px] font-semibold'>Affordable</p>
-            <p className='text-[48px] font-bold'>Pricing Plans</p>
-            <p className='text-[18px]'>Choose the perfect plan for your business needs</p>
+            <p className='text-center text-[16px] font-semibold'>Affordable</p>
+            <p className='text-center text-[32px] md:text-[48px] font-bold'>Pricing Plans</p>
+            <p className='text-center text-[16px]'>Choose the perfect plan for your business needs</p>
         </article>
-        <article className='flex justify-center items-start gap-8'>
+        <article className='flex flex-col md:flex-row justify-center items-start gap-4 md:gap-8'>
             <Card />
         </article>
     </section>

@@ -8,7 +8,7 @@ function Footer() {
             <Image src="/logo-white.png" alt="logo" width={100} height={50} />
             <div>
                 <nav>
-                    <ul className='flex justify-between items-center gap-4 text-{16px]'>
+                    <ul className='flex md:flex-row sm:flex-col justify-between items-center gap-4 text-{16px]'>
                         <li>About Us</li>
                         <li>Services</li>
                         <li>Portfolio</li>
@@ -19,10 +19,10 @@ function Footer() {
                 </nav>
             </div>
         </div>
-            <div className="flex w-full justify-between items-center text-sm">
-                <p>© 2024 WebDev Agency. All rights reserved.</p>
+            <div className="flex md:flex-row flex-col sm:gap-8 w-full justify-between items-center text-sm sm:text-center">
+                <p className="md:order-1 sm:order-1">© 2024 WebDev Agency. All rights reserved.</p>
                 <nav>
-                    <ul className="flex gap-4 underline font-light">
+                    <ul className="flex md:flex-row flex-col sm:order-2 gap-4 underline font-light">
                         <li>Privacy Policy</li>
                         <li>Terms and conditions</li>   
                         <li>Cookie Policy</li>

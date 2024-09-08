@@ -18,7 +18,7 @@ function Header() {
         </ul>
       </nav>
       </div>
-      <MainButton />
+      <MainButton >Get in Touch</MainButton>
     </header>
   )
 }

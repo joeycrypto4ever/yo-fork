@@ -1,8 +1,9 @@
 import React from 'react'
+import MainButton from './mainButton'
 
 function Form() {
   return (
-    <form className='flex flex-col w-[45%] gap-6'>
+    <form className='flex flex-col w-full md:w-[45%] gap-6'>
         <div className='flex flex-col gap-0'>
         <label htmlFor="name">Name</label>
         <input className='h-12 text-black px-4' type="text" id="name" />
@@ -15,7 +16,7 @@ function Form() {
         <label htmlFor="message">Message</label>
         <textarea className='min-h-[180px] text-black px-4 py-2' id="message" />
         </div>
-        <button className='bg-main text-white text-[16px] px-4 py-1 rounded-full'>Submit</button>
+        <MainButton className='w-full py-2'>Submit</MainButton>
     </form>
   )
 }
