@@ -9,7 +9,7 @@ import Reviews from "./components/reviews"
 function Home() {
   return (
     <>
-    <Header />
+    {/* <Header /> */}
     <OurProjects />
     <Reviews />
     <Pricing />

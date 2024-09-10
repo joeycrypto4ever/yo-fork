@@ -6,10 +6,10 @@ function Card() {
     //map over cardData and return a card for each object in the array 
     cardData.map((card) => {
       return (
-        <div key={card.id} className='flex flex-col justify-center items-center p-8 gap-8 border-2 border-main rounded-[20px]'>
+        <div data-aos="flip-right" key={card.id} className='flex flex-col justify-center items-center p-8 gap-8 border-2 border-main rounded-[20px]'>
           <div className='flex flex-col justify-center items-center '>
             <h1 className='md:text-[18px] lg:text-[20px] font-bold'>{card.title}</h1>
-            <p className='text-[40px] lg:text-[48px] font-bold'>{card.price}</p>
+            <p className='text-[32px] lg:text-[48px] font-bold'>{card.price}</p>
             <p className='md:text-[12px] lg:text-[16px]'>{card.slogan}</p>
           </div>
           <div className='flex flex-col justify-center items-center gap-4'>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
+import { AOSInit } from "./utils/aos";
 
 const inter = Roboto({
   subsets: ["latin"],
@@ -19,6 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <AOSInit />
       <body className={`max-w-7xl mx-auto ${inter.className}`}>{children}</body>
     </html>
   );
