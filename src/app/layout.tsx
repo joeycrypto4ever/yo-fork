@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import { AOSInit } from "./utils/aos";
+<<<<<<< HEAD
+=======
+
+>>>>>>> 772927c (all sections)
 
 const inter = Roboto({
   subsets: ["latin"],
@@ -19,9 +23,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+<<<<<<< HEAD
     <html lang="en">
       <AOSInit />
       <body className={`max-w-7xl mx-auto ${inter.className}`}>{children}</body>
+=======
+    <html lang="en" className="scroll-smooth">
+      <AOSInit />
+      <body className={inter.className} >{children}</body>
+>>>>>>> 772927c (all sections)
     </html>
   );
 }
