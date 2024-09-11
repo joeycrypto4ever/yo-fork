@@ -12,17 +12,16 @@ function Footer() {
             <div>
                 <nav>
                     <ul className='flex md:flex-row sm:flex-col justify-between items-center gap-4 text-{16px]'>
-                        <li data-aos="fade-down" data-aos-duration="1000"><Link href="/about-us">About Us</Link></li>
-                        <li data-aos="fade-down" data-aos-duration="1200"><Link href="/services">Services</Link></li>
-                        <li data-aos="fade-down" data-aos-duration="1400"><Link href="/process">Process</Link></li>
-                        <li data-aos="fade-down" data-aos-duration="1600"><Link href="/portfolio">Portfolio</Link></li>
-                        <li data-aos="fade-down" data-aos-duration="3800"><Link href="/testemonial">Testemonial</Link></li>
-                        
+                        <li data-aos="fade-up" className='text-md hover:text-main'><Link href='#Services'>Services</Link></li>
+                        <li data-aos="fade-up" className='text-md hover:text-main'><Link href='#Process'>Process</Link></li>
+                        <li data-aos="fade-up" className='text-md hover:text-main'><Link href='#Portfolio'>Portfolio</Link></li>
+                        <li data-aos="fade-up" className='text-md hover:text-main'><Link href='#Testemonial'>Testemonial</Link></li>
+                        <li data-aos="fade-up" className='text-md hover:text-main'><Link href='#Pricing'>Pricing</Link></li>
                     </ul>
                 </nav>
             </div>
         </div>
-        <div data-aos="fade-up" data-aos-offset="50" className="flex md:flex-row flex-col sm:gap-8 w-full justify-between items-center text-sm sm:text-center">
+        <div className="flex md:flex-row flex-col sm:gap-8 w-full justify-between items-center text-sm sm:text-center">
                 <p  className="md:order-1 sm:order-2">© 2024 WebDev Agency. All rights reserved.</p>
                 <nav className="md:order-2 sm:order-1" >
                     <ul  className="flex md:flex-row flex-col md:gap-2 lg:gap-4 underline font-light">

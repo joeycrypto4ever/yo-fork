@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Button from './button'
 import ProcessCard from './process-card'
+import MainButton from '../ui/mainButton'
 
 export default function Process() {
     const steps = [
@@ -66,8 +67,8 @@ export default function Process() {
                 ))}
             </div>
             {/* button for small and medium screens */}
-            <Button text='Get in Touch' className='w-1/2 mx-auto lg:hidden ' data-aos="zoom-in"/>
-
+            {/* <Button text='Get in Touch' className='w-1/2 mx-auto lg:hidden ' data-aos="zoom-in"/> */}
+                <MainButton link='#contact'>Get in Touch</MainButton>
             
         </div>
     </section>

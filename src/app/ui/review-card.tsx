@@ -3,7 +3,6 @@ import { reviewsData } from "../lib/reviews-data"
 
 function ReviewCard() {
   return (
-    //generate 6 card using data from reviewsData list 
     reviewsData.map((review) => {
       return (
         <div data-aos="flip-up" key={review.id} className=''>
@@ -23,7 +22,6 @@ function ReviewCard() {
                 </div>
             </div>
           </div>
-          
         </div>
       )
     })

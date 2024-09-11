@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Button from './button'
+import MainButton from '../ui/mainButton'
 
 export default function Features() {
   const features = [
@@ -46,7 +47,7 @@ export default function Features() {
           </div>
         ))}
       </div>
-      <Button  text='Get in Touch' className='bg-main px-8 py-4' data-aos="zoom-in" />
+      <MainButton link='#contact'>Get in Touch</MainButton>
 
     </section>
   )

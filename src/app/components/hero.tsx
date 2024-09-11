@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from './button'
+import MainButton from '../ui/mainButton';
 
 export default function Hero() {
     const images = [
@@ -45,8 +46,10 @@ export default function Hero() {
             <h2 className='text-4xl font-bold'  >Transform Your Business<br /> with a Stunning Website</h2>
             <p className='text-md ' >We create professional, tailored websites that help businesses establish a strong online presence. From concept to launch, we deliver engaging digital solutions that attract customers and boost your visibility in the digital marketplace</p>
             <div className='flex justify-center lg:justify-start items-center gap-4' data-aos="zoom-in" >
-                <Button   text='Get in Touch'  className='px-8 py-4'/>
-                <Button text='Our Work' className='bg-white text-main outline outline-main outline-2 px-8 py-4' />
+                <MainButton link='#contact'>Get in Touch</MainButton>
+                <MainButton link='#projects' className='bg-white text-main outline outline-main outline-2 px-8 py-4'>Our Work</MainButton>
+                {/* <Button   text='Get in Touch'  className='px-8 py-4'/>
+                <Button text='Our Work' className='bg-white text-main outline outline-main outline-2 px-8 py-4' /> */}
             </div>
         </div>
 
