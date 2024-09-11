@@ -26,11 +26,7 @@ const config: Config = {
         },
         colors: {
           'main': '#007BFF',
-<<<<<<< HEAD
-          'second': '#47019d',
-=======
           'second': '#EEEEEE',
->>>>>>> 772927c (all sections)
           'three': '#e00256',
           'white': '#ffffff',
           'gray': '#EEEEEE'
