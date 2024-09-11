@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Button from './button'
-import ProcessCard from './process-card'
+import ProcessCard from '../ui/process-card'
 
 export default function Process() {
     const steps = [

@@ -42,7 +42,7 @@ export default function Hero() {
                 
         {/* Text Section */}
         <div className='flex flex-col gap-4 px-8  lg:gap-8 lg:w-1/2 text-center lg:text-left'>
-            <h2 className='text-4xl font-bold'  >Transform Your Business<br /> with a Stunning Website</h2>
+            <h2 className='text-4xl font-bold'  >Transform Your Business 22<br /> with a Stunning Website</h2>
             <p className='text-md ' >We create professional, tailored websites that help businesses establish a strong online presence. From concept to launch, we deliver engaging digital solutions that attract customers and boost your visibility in the digital marketplace</p>
             <div className='flex justify-center lg:justify-start items-center gap-4' data-aos="zoom-in" >
                 <Button   text='Get in Touch'  className='px-8 py-4'/>
