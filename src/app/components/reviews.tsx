@@ -2,7 +2,7 @@ import ReviewCard from "../ui/review-card"
 
 function Reviews() {
   return (
-    <section  className="flex flex-col justify-center items-center px-5 py-16 gap-12 md:px-16 md:py-28">
+    <section  id="Testemonial" className="flex flex-col justify-center items-center px-5 py-16 gap-12 md:px-16 md:py-28 bg-gradient-to-b from-white to-second">
       <article data-aos="fade-up" className='flex flex-col justify-center items-center'>
             <p className='text-[32px] md:text-[48px] font-bold'>Client Feedback</p>
             <p className='text-[16px]'>Hear What Our Clients Have to Say</p>

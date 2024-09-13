@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import React from 'react'
-import Button from './button'
 import Link from 'next/link'
+import MainButton from '../ui/mainButton'
+
 
 function Header() {
   return (
@@ -18,7 +18,7 @@ function Header() {
         </ul>
       </nav>
       </div>
-      <Button text='Get in Touch' />
+      <MainButton className='lg:py-2 px-6'>Get in Touch</MainButton>
     </header>
   )
 }
