@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import Button from './button'
 import Link from 'next/link'
+import MainButton from '../ui/mainButton'
 
 function Header() {
   return (
@@ -18,7 +19,7 @@ function Header() {
         </ul>
       </nav>
       </div>
-      <Button text='Get in Touch' />
+      <MainButton link='#contact'>Get in Touch</MainButton>
     </header>
   )
 }

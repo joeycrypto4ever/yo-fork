@@ -3,8 +3,8 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { SlMenu } from "react-icons/sl";
 import { AiOutlineClose } from "react-icons/ai";
-import Button from './button';
 import Link from 'next/link';
+import MainButton from '../ui/mainButton';
 
 
 
@@ -29,7 +29,7 @@ export default function MobileHeader() {
               <li className='text-md hover:text-main'><Link href='#Portfolio'>Portfolio</Link></li>
               <li className='text-md hover:text-main'><Link href='#Testemonial'>Testemonial</Link></li>
               <li className='text-md hover:text-main'><Link href='#Pricing'>Pricing</Link></li>
-              <Button text='Get in Touch' />
+              <MainButton link='#contact'>Get in Touch</MainButton>
             </ul>
 
         </nav>)
