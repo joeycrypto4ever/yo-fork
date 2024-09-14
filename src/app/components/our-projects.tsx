@@ -16,7 +16,7 @@ function OurProjects() {
         <div data-aos="fade-up" className='w-1/2 md:w-1/4 '>
           <MainButton className='w-full  mx-auto py-2 px-6' >Get in Touch</MainButton>
         </div>
-        </section>
+    </section>
   )
 }
 

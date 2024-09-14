@@ -17,7 +17,7 @@ export default function Process() {
 
             {/* card content : steps + image */}
 
-            <div className='flex flex-col gap-[48px] lg:w-2/3 ' data-aos="fade-up">
+            <div className='flex flex-col gap-[48px] lg:w-2/3 ' >
                 <ProcessCard />
 
             </div>

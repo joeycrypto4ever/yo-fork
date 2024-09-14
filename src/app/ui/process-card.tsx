@@ -27,7 +27,7 @@ export default function ProcessCard({...props}) {
       return (
         processData.map((step) => {
           return (
-            <div key={step.id} className={twMerge('flex flex-col md:flex-row gap-[48px] items-center justify-center w-full', step?.className)} >
+            <div key={step.id} className={twMerge('flex flex-col md:flex-row gap-[48px] items-center justify-center w-full', step?.className)} data-aos="fade-up" >
                 <div className='flex flex-col gap-[24px] w-full md:w-1/2'>
                     <p className='text-md font-semibold'>{step.step}</p>
                     <h4 className='text-2xl font-bold'>{step.title}</h4>
