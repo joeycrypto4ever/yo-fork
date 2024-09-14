@@ -1,10 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import MainButton from '../ui/mainButton'
-<<<<<<< HEAD
-=======
-
->>>>>>> yo-branch
 
 function Header() {
   return (
@@ -21,11 +17,7 @@ function Header() {
         </ul>
       </nav>
       </div>
-<<<<<<< HEAD
-      <MainButton link='#contact'>Get in Touch</MainButton>
-=======
       <MainButton className='lg:py-2 px-6'>Get in Touch</MainButton>
->>>>>>> yo-branch
     </header>
   )
 }

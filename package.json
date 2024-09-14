@@ -31,12 +31,8 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
-<<<<<<< HEAD
     "postcss": "^8",
     "prisma": "^5.19.1",
-=======
-    "postcss": "^8.4.45",
->>>>>>> yo-branch
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
