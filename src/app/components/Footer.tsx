@@ -12,13 +12,21 @@ function Footer() {
             <div>
                 <nav>
                     <ul className='flex md:flex-row sm:flex-col justify-between items-center gap-4 text-{16px]'>
+<<<<<<< HEAD
                         <li data-aos="fade-up" className='text-md hover:text-main'><Link href='#Services'>Services</Link></li>
                         <li data-aos="fade-up" className='text-md hover:text-main'><Link href='#Process'>Process</Link></li>
                         <li data-aos="fade-up" className='text-md hover:text-main'><Link href='#Portfolio'>Portfolio</Link></li>
                         <li data-aos="fade-up" className='text-md hover:text-main'><Link href='#Testemonial'>Testemonial</Link></li>
                         <li data-aos="fade-up" className='text-md hover:text-main'><Link href='#Pricing'>Pricing</Link></li>
+=======
+                        <li data-aos="fade-up" ><Link href="#Services">Services</Link></li>
+                        <li data-aos="fade-up" ><Link href="#Process">Process</Link></li>
+                        <li data-aos="fade-up" ><Link href="#Portfolio">Portfolio</Link></li>
+                        <li data-aos="fade-up" ><Link href="#Testemonial">Testemonial</Link></li>
+                        <li data-aos="fade-up" ><Link href="#Pricingl">Pricing</Link></li>           
+>>>>>>> yo-branch
                     </ul>
-                </nav>
+                </nav>             
             </div>
         </div>
         <div className="flex md:flex-row flex-col sm:gap-8 w-full justify-between items-center text-sm sm:text-center">

@@ -19,7 +19,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+<<<<<<< HEAD
     
+=======
+>>>>>>> yo-branch
     <html lang="en" className="scroll-smooth">
       <AOSInit />
       <body className={inter.className} >{children}</body>
