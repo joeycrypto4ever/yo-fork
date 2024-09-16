@@ -51,7 +51,7 @@ function Form() {
           <textarea onChange={(e) => setEmailData({ ...emailData, message: e.target.value })} className='min-h-[180px] text-black px-4 py-2' id="message" />
         </div>
         <div data-aos="fade-down">
-          <button  type='submit' className='bg-main text-white md:text-[13px] w-full hover:scale-105 duration-300 lg:text-[16px] md:py-2 px-4 lg:py-3 rounded-full'>Submit</button>
+          <button  type='submit' className='bg-main text-white md:text-[13px] w-full hover:scale-105 duration-300 lg:text-[16px] py-3 px-4 rounded-full'>Submit</button>
         </div>
     </form>
   )
