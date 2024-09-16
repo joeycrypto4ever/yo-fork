@@ -8,8 +8,8 @@ export default function Services() {
       
       <div data-aos="fade-up" className='flex flex-col gap-[25px]'>
         <p className='text-md font-semibold'>WEBSITES WITH A PURPOSE</p>
-        <h3 className='text-3xl font-bold'>WE'VE GOT YOU COVERED</h3>
-        <p className='text-md md:w-2/3 w-full text-center mx-auto'>At Winxo Desings, we know precisely what needs to get done to build the right digital experience for your clients. Our team creates digital solutions that aren't just great to look at, but get outstanding results for your company.</p>
+        <h3 className='text-3xl font-bold'>WE&apos;VE GOT YOU COVERED</h3>
+        <p className='text-md md:w-2/3 w-full text-center mx-auto'>At Winxo Desings, we know precisely what needs to get done to build the right digital experience for your clients. Our team creates digital solutions that aren&apos;t just great to look at, but get outstanding results for your company.</p>
       </div>  
         
       <div  className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[32px] items-center justify-center' >
