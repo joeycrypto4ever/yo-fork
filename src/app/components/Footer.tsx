@@ -16,12 +16,12 @@ function Footer() {
                         <li data-aos="fade-up" ><Link href="#Process">Process</Link></li>
                         <li data-aos="fade-up" ><Link href="#Portfolio">Portfolio</Link></li>
                         <li data-aos="fade-up" ><Link href="#Testemonial">Testemonial</Link></li>
-                        <li data-aos="fade-up" ><Link href="#Pricingl">Pricing</Link></li>           
+                        <li data-aos="fade-up" ><Link href="#Pricing">Pricing</Link></li>   
                     </ul>
                 </nav>             
             </div>
         </div>
-        <div data-aos="fade-up" data-aos-offset="50" className="flex md:flex-row flex-col sm:gap-8 w-full justify-between items-center text-sm sm:text-center">
+        <div className="flex md:flex-row flex-col sm:gap-8 w-full justify-between items-center text-sm sm:text-center">
                 <p  className="md:order-1 sm:order-2">© 2024 WebDev Agency. All rights reserved.</p>
                 <nav className="md:order-2 sm:order-1" >
                     <ul  className="flex md:flex-row flex-col md:gap-2 lg:gap-4 underline font-light">

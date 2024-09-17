@@ -1,6 +1,7 @@
 import React from 'react'
 import MainButton from '../ui/mainButton'
 import {Images, LeftImages, RightImages} from '../lib/hero-data'
+import Image from 'next/image'
 
 export default function Hero() {
     
@@ -11,11 +12,13 @@ export default function Hero() {
         <div className="lg:hidden relative overflow-hidden">
             <div className="flex gap-4 animate-scroll">
                 {[...Images, ...Images].map((src, index) => (
-                <img
+                <Image
                     key={index}
                     src={src}
                     alt={`Image ${index + 1}`}
                     className="w-[220px] h-[265px] object-cover rounded-2xl"
+                    width={220}
+                    height={265}
                 />
                 ))}
             </div>
@@ -36,11 +39,13 @@ export default function Hero() {
             <div className="hidden lg:block relative overflow-hidden">
                 <div className="flex flex-col gap-4 animate-move">
                     {[...LeftImages, ...LeftImages, ...LeftImages, ...LeftImages, ...LeftImages, ...LeftImages, ...LeftImages, ...LeftImages, ...LeftImages, ...LeftImages, ...LeftImages].map((src, index) => (
-                    <img
+                    <Image
                         key={index}
                         src={src}
                         alt={`Image ${index + 1}`}
                         className="w-[320px] h-[340px] object-cover rounded-2xl"
+                        width={320}
+                        height={340}
                     />
                     ))}
                 </div>
@@ -49,11 +54,13 @@ export default function Hero() {
             <div className="hidden lg:block relative overflow-hidden">
                 <div className="flex flex-col gap-4 animate-down">
                     {[...RightImages, ...RightImages, ...RightImages, ...RightImages, ...RightImages, ...RightImages, ...RightImages, ...RightImages, ...RightImages, ...RightImages].map((src, index) => (
-                    <img
+                    <Image
                         key={index}
                         src={src}
                         alt={`Image ${index + 1}`}
                         className="w-[320px] h-[340px] object-cover rounded-2xl"
+                        width={320}
+                        height={340}
                     />
                     ))}
                 </div>

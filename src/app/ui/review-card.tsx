@@ -23,7 +23,6 @@ function ReviewCard() {
                 </div>
             </div>
           </div>
-          
         </div>
       )
     })

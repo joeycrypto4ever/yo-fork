@@ -1,22 +1,18 @@
 export const compagnies = [
     {
         name: "Company 1",
-        logo: "/logo.png",
-        link: "https://www.company1.com"
+        logo: "/amazon.svg",
     },
     {
         name: "Company 2",
-        logo: "/logo.png",
-        link: "https://www.company2.com"
+        logo: "/google.svg",
     },
     {
         name: "Company 3",
-        logo: "/logo.png",
-        link: "https://www.company3.com"
+        logo: "/microsoft.svg",
     },
     {
         name: "Company 4",
-        logo: "/logo.png",
-        link: "https://www.company4.com"
+        logo: "/ebay.png",
     },
 ]

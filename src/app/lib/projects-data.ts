@@ -2,11 +2,11 @@
 export const projectsData = [
     {
         id: 1,
-        name: "Project one",
-        description: "A stunning website for a local restaurant.",
+        name: "bestbarbershop.com",
+        description: "A stunning website for a local barber shop.",
         tags: ["Restaurant", "Food", "Responsive"],
         image: "/project1.png",
-        link: "https://www.project1.com"
+        link: "https://bestbarbershop.com"
     },
     {
         id: 2,

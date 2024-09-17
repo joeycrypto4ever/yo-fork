@@ -5,16 +5,15 @@ import OurProjects from "./components/our-projects"
 import Pricing from "./components/pricing"
 import Reviews from "./components/reviews"
 import React from 'react'
-import Header from './components/header'
 import MobileHeader from './components/mobile-header'
 import Hero from './components/hero'
 import Process from './components/process'
 import Services from "./components/services"
-
+import DesktopHeader from './components/desktop-header'
 function Home() {
   return (
     <>
-      <Header />
+      <DesktopHeader/>
       <MobileHeader />
       <Hero />
       <Services />
