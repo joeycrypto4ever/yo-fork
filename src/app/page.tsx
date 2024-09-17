@@ -9,8 +9,7 @@ import MobileHeader from './components/mobile-header'
 import Hero from './components/hero'
 import Process from './components/process'
 import Services from "./components/services"
-import DesktopHeader from "./components/header"
-
+import DesktopHeader from './components/desktop-header'
 function Home() {
   return (
     <>
