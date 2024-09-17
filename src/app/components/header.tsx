@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import MainButton from '../ui/mainButton'
 
-function Header() {
+function DesktopHeader() {
   return (
     <header className='hidden sticky top-0 z-50  lg:flex justify-between items-center bg-white/30 backdrop-blur-md  border-white/20 px-[64px] border-b-2'>
       <div className='flex justify-between items-center gap-6'>
@@ -22,4 +22,4 @@ function Header() {
   )
 }
 
-export default Header
+export default DesktopHeader
