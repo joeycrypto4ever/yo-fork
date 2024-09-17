@@ -16,7 +16,7 @@ function Footer() {
                         <li data-aos="fade-up" ><Link href="#Process">Process</Link></li>
                         <li data-aos="fade-up" ><Link href="#Portfolio">Portfolio</Link></li>
                         <li data-aos="fade-up" ><Link href="#Testemonial">Testemonial</Link></li>
-                        <li data-aos="fade-up" ><Link href="#Pricingl">Pricing</Link></li>           
+                        <li data-aos="fade-up" ><Link href="#Pricing">Pricing</Link></li>           
                     </ul>
                 </nav>             
             </div>
