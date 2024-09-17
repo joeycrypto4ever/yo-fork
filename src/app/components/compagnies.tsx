@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import { compagnies } from '../lib/compagnies-data'
-import Link from 'next/link'
 function Compagnies() {
   
   return (
@@ -10,9 +9,7 @@ function Compagnies() {
         <ul data-aos="fade-up" className='flex md:flex-nowrap flex-wrap justify-evenly items-center gap-8'>
             {compagnies.map((compagnie) => (
                 <li key={compagnie.name}>
-                    <Link className='flex justify-center items-center'  href={compagnie.link}>
                         <Image width={140} height={60} src={compagnie.logo} alt={compagnie.name} />
-                    </Link>
                 </li>
             ))}
         </ul>
