@@ -3,10 +3,9 @@ import { reviewsData } from "../lib/reviews-data"
 
 function ReviewCard() {
   return (
-    //generate 6 card using data from reviewsData list 
-    reviewsData.map((review, index) => {
+    reviewsData.map((review) => {
       return (
-        <div data-aos="flip-up" key={review.id} className={`${index > 2 ? "hidden md:block" : "block"}`}>
+        <div data-aos="flip-up" key={review.id} className=''>
           <div className='flex flex-col justify-center items-start gap-8 p-8 border-[1px] '>
             <div className='flex justify-center items-center gap-2'>
               {[...Array(review.stars)].map((star, index) => (

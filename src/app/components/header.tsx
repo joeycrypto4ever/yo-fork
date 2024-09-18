@@ -1,8 +1,9 @@
 import Image from 'next/image'
-import Link from 'next/link'
+import React from 'react'
 import MainButton from '../ui/mainButton'
+import Link from 'next/link'
 
-function DesktopHeader() {
+function Header() {
   return (
     <header className='hidden sticky top-0 z-50  lg:flex justify-between items-center bg-white/30 backdrop-blur-md  border-white/20 px-[64px] border-b-2'>
       <div className='flex justify-between items-center gap-6'>
@@ -17,9 +18,9 @@ function DesktopHeader() {
         </ul>
       </nav>
       </div>
-      <MainButton className='lg:py-2 px-6'>Get in Touch</MainButton>
+      <MainButton link='#contact'>Get in Touch</MainButton>
     </header>
   )
 }
 
-export default DesktopHeader
+export default Header

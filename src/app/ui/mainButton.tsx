@@ -1,16 +1,26 @@
-import Link from 'next/link'
-import React from 'react'
-import { twMerge } from 'tailwind-merge'
+import React from "react";
+import { cn } from "../lib/utils";
 
-function MainButton({className,children,linked}:{className?:string,children:React.ReactNode,linked?:string}) {
-  
+function MainButton({
+  className,
+  children,
+  link,
+}: {
+  className?: string;
+  children: React.ReactNode;
+  link: string;
+}) {
   return (
-    <Link href={linked? linked : "#contact"}>
-      <button className={twMerge('bg-main text-white md:text-[13px] lg:text-[16px] py-3 px-6 rounded-full hover:scale-105 duration-300 ', className)}
-      >{children}</button>
-    </Link>
-    
-  )
+    <a
+      className={cn(
+        "bg-main text-white md:text-[13px] hover:scale-105 duration-300 lg:text-[16px] md:py-2 px-4 lg:py-3 rounded-full",
+        className
+      )}
+      href={link}
+    >
+      {children}
+    </a>
+  );
 }
 
-export default MainButton
+export default MainButton;
