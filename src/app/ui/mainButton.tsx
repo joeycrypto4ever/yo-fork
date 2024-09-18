@@ -1,16 +1,26 @@
-import React from 'react'
-import { cn } from '../lib/utils'
+import React from "react";
+import { cn } from "../lib/utils";
 
-function MainButton({className,children,link}:{className?:string,children:React.ReactNode,link:string })  {
-  
+function MainButton({
+  className,
+  children,
+  link,
+}: {
+  className?: string;
+  children: React.ReactNode;
+  link: string;
+}) {
   return (
-    <a href={link}>
-    <button className={cn('bg-main text-white md:text-[13px] hover:scale-105 duration-300 lg:text-[16px] md:py-2 px-4 lg:py-3 rounded-full', className)}>
+    <a
+      className={cn(
+        "bg-main text-white md:text-[13px] hover:scale-105 duration-300 lg:text-[16px] md:py-2 px-4 lg:py-3 rounded-full",
+        className
+      )}
+      href={link}
+    >
       {children}
-    </button>
-  </a>
-    
-  )
+    </a>
+  );
 }
 
-export default MainButton
+export default MainButton;

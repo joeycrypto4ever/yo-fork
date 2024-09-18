@@ -1,7 +1,7 @@
 import { type ClassValue, clsx } from "clsx"
 import { twMerge } from "tailwind-merge"
 import { PrismaClient } from '@prisma/client';
-
+import { z } from 'zod';
 
 
 const prisma = new PrismaClient()
@@ -22,3 +22,9 @@ export async function addUser({name, email, message}:{name: string, email: strin
   })
   console.log(user)
 }
+
+export const userSchema = z.object({
+  name: z.string().min(3, 'Name must be at least 3 characters long'),
+  email: z.string().email('Invalid email format'),
+  message: z.string().min(100, 'Message must be at least 100 characters long'),
+});
