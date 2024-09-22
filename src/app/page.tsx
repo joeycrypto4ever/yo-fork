@@ -1,5 +1,4 @@
 import Compagnies from "./components/compagnies"
-import Features from "./components/features"
 import Footer from "./components/Footer"
 import GetInTouch from "./components/Get-in-touch"
 import OurProjects from "./components/our-projects"
@@ -10,6 +9,7 @@ import Header from './components/header'
 import MobileHeader from './components/mobile-header'
 import Hero from './components/hero'
 import Process from './components/process'
+import Services from "./components/services"
 
 function Home() {
   return (
@@ -17,7 +17,7 @@ function Home() {
       <Header />
       <MobileHeader />
       <Hero />
-      <Features />
+      <Services />
       <Process />
       <OurProjects />
       <Reviews />

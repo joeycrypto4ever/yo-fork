@@ -47,8 +47,8 @@ const config: Config = {
         },
         animation: {
           scroll: 'scroll 30s linear infinite',
-          move: 'move 240s linear infinite',
-          down: 'down 240s linear infinite'
+          move: 'move 90s linear infinite',
+          down: 'down 90s linear infinite'
         },
     },
   },

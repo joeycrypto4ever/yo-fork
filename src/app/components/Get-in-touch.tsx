@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { roboto } from '../utils/font'
 function GetInTouch() {
   return (
-    <section id='contact' className='bg-black text-white w-full flex justify-center items-center px-5 py-16 md:px-16 md:py-28'>
+    <section id='contact' className='bg-black text-white w-full flex justify-center items-center px-[20px] md:px-[64px] py-16  md:py-28'>
         <article className='w-full flex md:flex-row flex-col justify-between items-center gap-4'>
             <div className='flex flex-col justify-center items-center md:items-start gap-6 md:w-[55%] md:text-left text-center'>
                 <p data-aos="fade-up"  className={`text-[16px] ${roboto.className}`}>Get in touch</p>

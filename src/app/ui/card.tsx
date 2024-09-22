@@ -24,7 +24,7 @@ function Card() {
                 
               })} 
             </ul>
-            <MainButton link='#contact' className='w-full py-2' >Get in Touch</MainButton>
+            <MainButton link='#contact' className='w-full py-2 mt-4' >Get in Touch</MainButton>
 
           </div>
         </div>

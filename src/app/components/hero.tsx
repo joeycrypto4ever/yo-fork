@@ -1,41 +1,24 @@
 import React from 'react'
-import Button from './button'
-import MainButton from '../ui/mainButton';
+import MainButton from '../ui/mainButton'
+import {Images, LeftImages, RightImages} from '../lib/hero-data'
+import Image from 'next/image'
 
 export default function Hero() {
-    const images = [
-        '/hero 1.jpg',
-        '/hero 3.jpg',
-        '/hero 4.jpg',
-        '/hero 5.jpg',
-        '/hero 6.jpg',
-        '/hero 2.jpg',
-      ];
-
-    const LeftImages = [
-        '/hero 1.jpg',
-        '/hero 2.jpg',
-        '/hero 3.jpg',  
-          
-    ]
-    const RightImages = [
-        '/hero 4.jpg',
-        '/hero 5.jpg',
-        '/hero 6.jpg',
-       
-    ]
+    
   return (
-    <section id='Hero' className='flex flex-col lg:flex-row items-center justify-center gap-8 py-8 lg:py-0 lg:px-[64px]'>
+    <section id='Hero' className='flex flex-col lg:flex-row items-center justify-center bg-white gap-8 py-8 lg:py-0 px-[20px] md:px-[64px]'>
         
         {/* Mobile Image Scroll */}
         <div className="lg:hidden relative overflow-hidden">
             <div className="flex gap-4 animate-scroll">
-                {[...images, ...images].map((src, index) => (
-                <img
+                {[...Images, ...Images].map((src, index) => (
+                <Image
                     key={index}
                     src={src}
                     alt={`Image ${index + 1}`}
                     className="w-[220px] h-[265px] object-cover rounded-2xl"
+                    width={220}
+                    height={265}
                 />
                 ))}
             </div>
@@ -46,10 +29,8 @@ export default function Hero() {
             <h2 className='text-4xl font-bold'  >Transform Your Business<br /> with a Stunning Website</h2>
             <p className='text-md ' >We create professional, tailored websites that help businesses establish a strong online presence. From concept to launch, we deliver engaging digital solutions that attract customers and boost your visibility in the digital marketplace</p>
             <div className='flex justify-center lg:justify-start items-center gap-4' data-aos="zoom-in" >
-                <MainButton link='#contact'>Get in Touch</MainButton>
-                <MainButton link='#projects' className='bg-white text-main outline outline-main outline-2 px-8 py-4'>Our Work</MainButton>
-                {/* <Button   text='Get in Touch'  className='px-8 py-4'/>
-                <Button text='Our Work' className='bg-white text-main outline outline-main outline-2 px-8 py-4' /> */}
+                <MainButton  className='py-4 px-8'>Get in Touch</MainButton>
+                <MainButton  className='bg-white text-main outline outline-main outline-2 px-8 py-4' link='#Portfolio' >Our Work</MainButton>
             </div>
         </div>
 
@@ -58,11 +39,13 @@ export default function Hero() {
             <div className="hidden lg:block relative overflow-hidden">
                 <div className="flex flex-col gap-4 animate-move">
                     {[...LeftImages, ...LeftImages].map((src, index) => (
-                    <img
+                    <Image
                         key={index}
                         src={src}
                         alt={`Image ${index + 1}`}
                         className="w-[320px] h-[340px] object-cover rounded-2xl"
+                        width={320}
+                        height={340}
                     />
                     ))}
                 </div>
@@ -71,11 +54,13 @@ export default function Hero() {
             <div className="hidden lg:block relative overflow-hidden">
                 <div className="flex flex-col gap-4 animate-down">
                     {[...RightImages, ...RightImages].map((src, index) => (
-                    <img
+                    <Image
                         key={index}
                         src={src}
                         alt={`Image ${index + 1}`}
                         className="w-[320px] h-[340px] object-cover rounded-2xl"
+                        width={320}
+                        height={340}
                     />
                     ))}
                 </div>

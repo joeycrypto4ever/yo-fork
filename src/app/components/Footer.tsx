@@ -3,7 +3,7 @@ import Link from "next/link"
 
 function Footer() {
   return (
-    <footer className="w-full  bg-gradient-to-b from-[#000000] to-[#444444] text-white py-10 px-16">
+    <footer className="w-full  bg-gradient-to-b from-[#000000] to-[#444444] text-white py-10 px-[20px] md:px-[64px]">
         <div data-aos="fade-down" className="w-full h-[1px] bg-slate-400"></div>
         <div className="flex flex-col justify-between items-center my-20 ">
             <div data-aos="fade-up">

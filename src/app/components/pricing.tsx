@@ -3,7 +3,7 @@ import Card from '../ui/card'
 
 function Pricing() {
   return (
-    <section id='Pricing' className='flex flex-col justify-center items-center px-8 py-28 gap-20'>
+    <section id='Pricing' className='flex flex-col justify-center items-center py-28 gap-20 px-[20px] md:px-[64px]  bg-gradient-to-b from-second to-white'>
         <article data-aos="fade-up" className='flex flex-col justify-center items-center'>
             <p className='text-center text-[16px] font-semibold'>Affordable</p>
             <p className='text-center text-[32px] md:text-[48px] font-bold'>Pricing Plans</p>
