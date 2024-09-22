@@ -6,7 +6,7 @@ import Image from 'next/image'
 export default function Hero() {
     
   return (
-    <section id='Hero' className='flex flex-col lg:flex-row items-center justify-center bg-white gap-8 py-8 lg:py-0 px-[20px] md:px-[64px]'>
+    <section id='Hero' className='flex flex-col lg:flex-row items-center justify-center bg-white gap-8 py-8 lg:py-0  lg:px-[64px]'>
         
         {/* Mobile Image Scroll */}
         <div className="lg:hidden relative overflow-hidden">
