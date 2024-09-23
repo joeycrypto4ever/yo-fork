@@ -25,9 +25,8 @@ function Footer() {
                 <p  className="md:order-1 sm:order-2">© 2024 WebDev Agency. All rights reserved.</p>
                 <nav className="md:order-2 sm:order-1" >
                     <ul  className="flex md:flex-row flex-col md:gap-2 lg:gap-4 underline font-light">
-                        <li> <Link href="/privacy-policy">Privacy Policy</Link></li>
-                        <li> <Link href="/terms-and-conditions">Terms and conditions</Link></li>   
-                        <li> <Link href="/cookie-policy"> Cookie Policy </Link></li>
+                        <li> <Link href="/">Privacy Policy</Link></li>
+                        <li> <Link href="/">Terms and conditions</Link></li>   
                     </ul>
                 </nav>
         </div>

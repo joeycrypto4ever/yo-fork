@@ -17,7 +17,7 @@ function Card() {
               {card.features.map((feature) => {
                 return (
                   <div key={feature} className='flex justify-start items-center gap-4'>
-                    <Image src={"/check.png"} alt="logo" width={20} height={18.5} />
+                    <Image src="/check.png" alt="logo" width={20} height={18.5} />
                     <li  className='md:text-[12px] lg:text-[16px]'>{feature}</li>
                   </div>
                 )
