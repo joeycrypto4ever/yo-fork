@@ -20,7 +20,7 @@ export const reviewsData = [
         id: 3,
         stars: 4,
         text: "Our experience with this agency was very positive. They delivered a sleek and functional website, and our clients have commented on how user-friendly it is. There were a few minor details that needed adjustments after the launch, but they were quick to address them. I’m very satisfied with the outcome and would work with them again, though attention to small details could have been better initially.",
-        name: "David B.",
+        name: "Amanda B.",
         position: "Director, Nonprofit Organization",
         image: "/review3.png"
     },
@@ -36,8 +36,8 @@ export const reviewsData = [
         id: 5,
         stars: 4,
         text: "The website they built for us is exactly what we wanted—clean, professional, and easy to navigate. The design team really understood our vision and brought it to life. The only reason for 4 stars instead of 5 is that there was a small delay in the project timeline, but overall the final product is fantastic. I would still highly recommend them!",
-        name: "Sarah W.",
-        position: "Co-Founder, Digital Marketing Firm",
+        name: "John W.",
+        position: "Owner, Local Restaurant Chain",
         image: "/review5.png"
     },
     {
@@ -45,7 +45,7 @@ export const reviewsData = [
         stars: 5,
         text: "What sets this agency apart from others I’ve worked with is their outstanding customer service. They made the entire web development process transparent and easy to understand. Every question was answered promptly, and they made sure we were happy with every aspect of the site before launch. I can confidently say they are a top-notch agency.",
         name: "Emily D.",
-        position: "Owner, Local Restaurant Chain",
+        position: "Co-Founder, Digital Marketing Firm",
         image: "/review6.png"
     },
 

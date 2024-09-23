@@ -7,7 +7,7 @@ function GetInTouch() {
         <article className='w-full flex md:flex-row flex-col justify-between items-center gap-4'>
             <div className='flex flex-col justify-center items-center md:items-start gap-6 md:w-[55%] md:text-left text-center'>
                 <p data-aos="fade-up"  className={`text-[16px] ${roboto.className}`}>Get in touch</p>
-                <h1 data-aos="fade-up"  className={`text-[36px] lg:text-[56px] font-bold ${roboto.style.fontWeight=700}`}>Let's bring your project to life</h1>
+                <h1 data-aos="fade-up"  className={`text-[36px] lg:text-[56px] font-bold ${roboto.style.fontWeight=700}`}>Let&apos;s bring your project to life</h1>
                 <p data-aos="fade-up"  className=' text-[16px] font-light'>Submit this form to receive a response from one of our project strategists.</p>
                 <div data-aos="fade-up"  className='hidden  w-full md:flex justify-start items-center gap-4'>
                     <Image src="/rocket.png" alt="logo" width={20} height={18.5} />
