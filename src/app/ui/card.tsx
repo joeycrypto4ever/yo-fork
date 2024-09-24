@@ -1,6 +1,9 @@
 import MainButton from './mainButton'
 import { cardData } from '../lib/card-data'
 import Image from 'next/image'
+import { IoMdCheckmark } from "react-icons/io";
+
+
 function Card() {
   return (
     //map over cardData and return a card for each object in the array 
@@ -17,7 +20,7 @@ function Card() {
               {card.features.map((feature) => {
                 return (
                   <div key={feature} className='flex justify-start items-center gap-4'>
-                    <Image src="/check.png" alt="logo" width={20} height={18.5} />
+                    <IoMdCheckmark  width={25} height={25}/>
                     <li  className='md:text-[12px] lg:text-[16px]'>{feature}</li>
                   </div>
                 )

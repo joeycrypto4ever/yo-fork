@@ -102,7 +102,7 @@ function Form() {
     <div data-aos="fade-down">
       <button
         type='submit'
-        className='bg-main text-white md:text-[13px] w-full hover:scale-105 duration-300 lg:text-[16px] md:py-2 px-4 lg:py-3 rounded-full'
+        className='bg-main text-white md:text-[13px] lg:text-[16px] py-3 px-6 rounded-full hover:scale-105 duration-300 w-full'
       >
         Submit
       </button>
