@@ -4,6 +4,14 @@ import { addUser } from '@/app/lib/utils';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
+// Function to set CORS headers
+function setCorsHeaders(response: Response) {
+  response.headers.set('Access-Control-Allow-Origin', '*'); // Or specify your domain instead of '*'
+  response.headers.set('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  response.headers.set('Access-Control-Allow-Headers', 'Content-Type');
+  return response;
+}
+
 export async function POST(request: Request) {
   const { name, email, message } = await request.json();
 
@@ -16,19 +24,22 @@ export async function POST(request: Request) {
     });
 
     if (error) {
-      return new Response(JSON.stringify({ error }), { status: 500 });
+      const response = new Response(JSON.stringify({ error }), { status: 500 });
+      return setCorsHeaders(response);  // Set CORS headers
     }
 
     await addUser({ name, email, message });
 
-    return new Response(JSON.stringify(data), { status: 200 });
+    const response = new Response(JSON.stringify(data), { status: 200 });
+    return setCorsHeaders(response);  // Set CORS headers
   } catch (error: unknown) {
-    // Check if the error is an instance of Error and handle it safely
-    if (error instanceof Error) {
-      return new Response(JSON.stringify({ error: error.message }), { status: 500 });
-    } else {
-      // Handle cases where the error is not an instance of Error
-      return new Response(JSON.stringify({ error: "Unknown error" }), { status: 500 });
-    }
+    const errorMessage = error instanceof Error ? error.message : "Unknown error";
+    const response = new Response(JSON.stringify({ error: errorMessage }), { status: 500 });
+    return setCorsHeaders(response);  // Set CORS headers
   }
+}
+
+export async function OPTIONS() {
+  const response = new Response(null, { status: 204 });
+  return setCorsHeaders(response); // Handle preflight CORS requests
 }
