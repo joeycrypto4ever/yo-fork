@@ -16,36 +16,32 @@ function Form() {
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     try {
-      const validatedData = userSchema.parse(emailData); // Try to validate data
-      setValidationErrors(null); // Clear errors if validation is successful
-
-      const res = await fetch('http://localhost:3000/api/send', {
+      const validatedData = userSchema.parse(emailData);
+      setValidationErrors(null);
+  
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/send`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(validatedData),
       });
-
+  
       const data = await res.json();
       if (res.ok) {
-        console.log('Data fetched successfully:', data);
-        // Handle success
         setEmailData({ name: '', email: '', message: '' });
         setIsSubmitted(true);
       } else {
         console.error('Error fetching data:', data.error);
-        // Handle error (e.g., display an error message)
       }
-
+  
     } catch (error) {
       if (error instanceof ZodError) {
-        setValidationErrors(error.issues); // Set validation errors if ZodError is caught
+        setValidationErrors(error.issues);
       } else {
         console.error('An error occurred:', error);
       }
     }
-
   };
 
   return (

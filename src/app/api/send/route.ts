@@ -16,19 +16,38 @@ export async function POST(request: Request) {
     });
 
     if (error) {
-      return new Response(JSON.stringify({ error }), { status: 500 });
+      return new Response(JSON.stringify({ error }), { status: 500, headers: { 'Access-Control-Allow-Origin': '*' } });
     }
 
     await addUser({ name, email, message });
 
-    return new Response(JSON.stringify(data), { status: 200 });
+    return new Response(JSON.stringify(data), {
+      status: 200,
+      headers: { 'Access-Control-Allow-Origin': '*' }, // Allow CORS from any origin
+    });
   } catch (error: unknown) {
-    // Check if the error is an instance of Error and handle it safely
     if (error instanceof Error) {
-      return new Response(JSON.stringify({ error: error.message }), { status: 500 });
+      return new Response(JSON.stringify({ error: error.message }), {
+        status: 500,
+        headers: { 'Access-Control-Allow-Origin': '*' },
+      });
     } else {
-      // Handle cases where the error is not an instance of Error
-      return new Response(JSON.stringify({ error: "Unknown error" }), { status: 500 });
+      return new Response(JSON.stringify({ error: "Unknown error" }), {
+        status: 500,
+        headers: { 'Access-Control-Allow-Origin': '*' },
+      });
     }
   }
+}
+
+// For preflight request (OPTIONS)
+export async function OPTIONS() {
+  return new Response(null, {
+    status: 204,
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'POST, OPTIONS',
+      'Access-Control-Allow-Headers': 'Content-Type',
+    },
+  });
 }
